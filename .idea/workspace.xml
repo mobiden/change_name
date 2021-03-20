@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e47dd69-740b-4ed6-b54e-b4db7f65af98" name="Default Changelist" comment="add logfile and change place of songer's names">
+    <list default="true" id="0e47dd69-740b-4ed6-b54e-b4db7f65af98" name="Default Changelist" comment="add logfile change place of songer's names,&#10;add capitalize method for music files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ирина Бржевская - На крылечке.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Лариса Мондрус - Чудо-это ты.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Людмила Сенчина - Неужели это мне одной.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Полад Бюль-Бюль-Оглы - Хлоп-хлоп.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Татьяна Сашко - Белый танец.mp3" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +96,30 @@
       <workItem from="1614629719896" duration="226000" />
       <workItem from="1614670029366" duration="114000" />
       <workItem from="1614670215004" duration="1865000" />
-      <workItem from="1614686103500" duration="894000" />
+      <workItem from="1614686103500" duration="974000" />
+      <workItem from="1614772683626" duration="342000" />
+      <workItem from="1614773084177" duration="1777000" />
+      <workItem from="1614774944782" duration="1468000" />
+      <workItem from="1614798939525" duration="163000" />
+      <workItem from="1614841617444" duration="600000" />
+      <workItem from="1614849256073" duration="42000" />
+      <workItem from="1614849306161" duration="2000" />
+      <workItem from="1615380734420" duration="616000" />
+      <workItem from="1615493040466" duration="1397000" />
+      <workItem from="1615567044590" duration="169000" />
+      <workItem from="1615667055909" duration="816000" />
+      <workItem from="1616067769386" duration="641000" />
+      <workItem from="1616137828337" duration="268000" />
+      <workItem from="1616143142925" duration="984000" />
+      <workItem from="1616145007342" duration="1777000" />
+      <workItem from="1616146943787" duration="1022000" />
+      <workItem from="1616154151779" duration="1769000" />
+      <workItem from="1616173510892" duration="1201000" />
+      <workItem from="1616176894524" duration="1457000" />
+      <workItem from="1616182051050" duration="1564000" />
+      <workItem from="1616183715522" duration="242000" />
+      <workItem from="1616251976652" duration="804000" />
+      <workItem from="1616254589639" duration="1768000" />
     </task>
     <task id="LOCAL-00001" summary="add logfile and change place of songer's names">
       <created>1613239660885</created>
@@ -110,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613239660885</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add logfile change place of songer's names,&#10;add capitalize method for music files">
+      <created>1614687076713</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1614687076713</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,7 +155,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add logfile and change place of songer's names" />
-    <option name="LAST_COMMIT_MESSAGE" value="add logfile and change place of songer's names" />
+    <MESSAGE value="add logfile change place of songer's names,&#10;add capitalize method for music files" />
+    <option name="LAST_COMMIT_MESSAGE" value="add logfile change place of songer's names,&#10;add capitalize method for music files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -140,10 +166,20 @@
           <line>4</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/util.py</url>
+          <line>157</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/util.py</url>
+          <line>168</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/change_name$main.coverage" NAME="main Coverage Results" MODIFIED="1614686896169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/change_name$main.coverage" NAME="main Coverage Results" MODIFIED="1616255622938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
