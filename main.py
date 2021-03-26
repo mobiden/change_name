@@ -6,4 +6,4 @@ from tkinter import filedialog as fd
 
 
 
-start('', '')
+start('')

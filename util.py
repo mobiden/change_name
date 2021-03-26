@@ -56,7 +56,7 @@ def curr_dir():
 
 def checkfilemp3 (checkfile):
 # проверяет расширение на mp3
-    return checkfile.lower().count('.mp3') > 0
+    return checkfile[-4:].lower() == '.mp3'
 
 def del_fig(cur_dir,rec):
 # убирает цифры и символы спереди у названия файла
@@ -103,8 +103,7 @@ def change_name_place(cur_dir,rec):
 
 def capitalize_name(cur_dir, rec):
 # первые буквы большие - остальные маленькие
-    if cur_dir == '':
-        cur_dir = curr_dir()
+    cur_dir = curr_dir()
     all_files = os.listdir(cur_dir)
     if rec == '':
         rec = 'w'
@@ -112,16 +111,23 @@ def capitalize_name(cur_dir, rec):
         for th_file in all_files:
             if checkfilemp3(th_file):
                 cur_name = th_file
-                if th_file.count('-') > 0:
-                    chnamelist = th_file.split('-')
-                    for i in range(len(chnamelist)):
-                        chnamelist[i] = chnamelist[i].strip().capitalize()
-                    th_file = ' - '.join(chnamelist)
-                else:
-                    th_file = th_file.capitalize()
+                chnamelist = th_file[:-4].split()
+                th_file = ''
+                for x in range(len(chnamelist)):
+                    chnamelist[x] = chnamelist[x].strip()
+                    if x == 0:
+                        chnamelist[0] = chnamelist[0].capitalize()
+                    elif chnamelist[x][0].isupper() and chnamelist[x][1].islower():
+                        chnamelist[x] = chnamelist[x].capitalize()
+                    elif chnamelist[x] == '-':
+                        chnamelist[x + 1] = chnamelist[x + 1].capitalize()
+                    else:
+                        chnamelist[x] = chnamelist[x].lower()
+                    th_file += chnamelist[x] + ' '
+                th_file = th_file.strip() + '.mp3'
 
                 if cur_name != th_file:
-                    record_of_change(cur_name,th_file, logfile)
+                    record_of_change(cur_name, th_file, logfile)
     print('done')
     endans = end_of_def(cur_dir)
     if endans:
@@ -185,10 +191,10 @@ def latin_to_rus(cur_dir, rec):
                     th_file = th_file + '.mp3'
                     record_of_change(cur_name,th_file, logfile)
     print('done')
-    capitalize_name(cur_dir, 'a')
-    endans = end_of_def(cur_dir)
-    if endans:
-        return True
+    if not capitalize_name(cur_dir, 'a'):
+        endans = end_of_def(cur_dir)
+        if endans:
+            return True
 
 
 def unchanging(cur_dir):
